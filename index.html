@@ -31,11 +31,13 @@
     }
 
     .list-container ol {
-      padding-left: 1rem;
+      list-style-position: inside;
+      padding-left: 0.5rem;
     }
 
     .list-container li {
       margin: 0.15rem 0;
+      overflow-wrap: break-word;
     }
 
     .bar {
@@ -68,6 +70,31 @@
     input[type="checkbox"] {
       margin-right: 0.4rem;
       vertical-align: middle;
+    }
+
+    @media (max-width: 480px) {
+      .wrap {
+        padding: 0.5rem;
+      }
+
+      .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+      }
+
+      .row p,
+      .row button {
+        margin: 0;
+      }
+
+      .list-container ol {
+        padding-left: 0.5rem;
+      }
+
+      .bar {
+        height: 3px;
+      }
     }
   </style>
 </head>
