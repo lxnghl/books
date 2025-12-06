@@ -73,6 +73,15 @@
     }
 
     @media (max-width: 480px) {
+
+      html,
+      body {
+        align-items: flex-start;
+        justify-content: flex-start;
+        overflow-y: auto;
+        padding-top: 1rem;
+      }
+
       .wrap {
         padding: 0.5rem;
         width: 100%;
@@ -92,6 +101,12 @@
 
       .list-container ol {
         padding-left: 0.5rem;
+      }
+
+      .list-container li {
+        font-size: 0.85rem;
+        overflow-wrap: break-word;
+        word-break: break-word;
       }
 
       .bar {
